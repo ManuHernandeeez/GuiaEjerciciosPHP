@@ -10,57 +10,57 @@ El costo de las llamadas telefónicas internacionales depende de la zona geogr�
 
 echo "<h1>Ejercicio 5</h1>";
 
-   $clave = 0;
-    $zona = "";
-    $precio = 0.0;
-    $minutos = 0;
-    $total = 0.0;
- 
+$clave = 0;
+$zona = "";
+$precio = 0.0;
+$minutos = 0;
+$total = 0.0;
 
-function calcularCosto($clave, $minutos){
 
- 
-    if($minutos<30){
+function calcularCosto($clave, $minutos)
+{
+
+
+    if ($minutos < 30) {
         $descuento = 0.10;
-    }else{
-        $descuento = 0; 
+    } else {
+        $descuento = 0;
     }
 
     switch ($clave) {
         case 12:
-           $total = $minutos * 2;
-           $total = $total - ($total*$descuento);           
-           break;
+            $total = $minutos * 2;
+            $total = $total - ($total * $descuento);
+            break;
         case 15:
-           $total = $minutos * 2.20;
-           $total = $total - ($total*$descuento);           
-           break;
+            $total = $minutos * 2.20;
+            $total = $total - ($total * $descuento);
+            break;
         case 18:
-           $total = $minutos * 4.50;
-           $total = $total - ($total*$descuento);           
-           break;
+            $total = $minutos * 4.50;
+            $total = $total - ($total * $descuento);
+            break;
         case 19:
-           $total = $minutos * 3.50;
-           $total = $total - ($total*$descuento);           
-           break;
+            $total = $minutos * 3.50;
+            $total = $total - ($total * $descuento);
+            break;
         case 23:
-           $total = $minutos * 6.00;
-           $total = $total - ($total*$descuento);           
-           break;
+            $total = $minutos * 6.00;
+            $total = $total - ($total * $descuento);
+            break;
         case 25:
-           $total = $minutos * 6.00;
-           $total = $total - ($total*$descuento);           
-           break;
+            $total = $minutos * 6.00;
+            $total = $total - ($total * $descuento);
+            break;
         case 29:
-           $total = $minutos * 5.00;
-           $total = $total - ($total*$descuento);           
-           break;          
-           
+            $total = $minutos * 5.00;
+            $total = $total - ($total * $descuento);
+            break;
+        default:
+            echo "Clave invalida, ingrese una zona de la tabla";
+            exit;
     }
 
     echo "El total es: $" . $total;
-
-
-
 }
-calcularCosto(12, 29);
+calcularCosto(12, 10);
