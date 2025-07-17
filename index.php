@@ -9,12 +9,12 @@
     <h1>Ejercicios PHP</h1>
 
     <ul>
-        <li><a href="ejercicio1.php">Ejercicio 1</a></li>
-        <li><a href="ejercicio2.php">Ejercicio 2</a></li>
-        <li><a href="ejercicio3.php">Ejercicio 3</a></li>
-        <li><a href="ejercicio4.php">Ejercicio 4</a></li>
-        <li><a href="ejercicio5.php">Ejercicio 5</a></li>
-        <li><a href="ejercicio6.php">Ejercicio 6</a></li>
+        <li><a href="./Ejercicios/Ejercicio1.php">Ejercicio 1</a></li>
+        <li><a href="./Ejercicios/Ejercicio2.php">Ejercicio 2</a></li>
+        <li><a href="./Ejercicios/Ejercicio3.php">Ejercicio 3</a></li>
+        <li><a href="./Ejercicios/Ejercicio4.php">Ejercicio 4</a></li>
+        <li><a href="./Ejercicios/Ejercicio5.php">Ejercicio 5</a></li>
+        <li><a href="./Ejercicios/Ejercicio6.php">Ejercicio 6</a></li>
     </ul>
 </body>
 </html>
